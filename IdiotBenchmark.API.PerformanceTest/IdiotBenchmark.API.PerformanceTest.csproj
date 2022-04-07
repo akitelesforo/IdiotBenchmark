@@ -26,4 +26,8 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="NBomber.Http" Version="2.0.1" />
+    </ItemGroup>
+
 </Project>
