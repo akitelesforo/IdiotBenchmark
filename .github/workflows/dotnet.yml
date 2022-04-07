@@ -26,4 +26,4 @@ jobs:
     - name: Restore String.PerformanceTest
       run: dotnet restore IdiotBenchmark.String.PerformanceTest/IdiotBenchmark.String.PerformanceTest.csproj
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build
