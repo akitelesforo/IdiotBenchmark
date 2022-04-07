@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdiotBenchmark.Mapper.PerformanceTest", "IdiotBenchmark.Mapper.PerformanceTest\IdiotBenchmark.Mapper.PerformanceTest.csproj", "{77601604-3C85-429E-A704-BF5A1592B756}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdiotBenchmark.ORM.PerformanceTest", "IdiotBenchmark.ORM.PerformanceTest\IdiotBenchmark.ORM.PerformanceTest.csproj", "{1B578518-87A8-4F61-AE6D-2A9781288873}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdiotBenchmark.API.PerformanceTest", "IdiotBenchmark.API.PerformanceTest\IdiotBenchmark.API.PerformanceTest.csproj", "{02711A69-AB8F-47C6-91C0-A5AB71124266}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdiotBenchmark.String.PerformanceTest", "IdiotBenchmark.String.PerformanceTest\IdiotBenchmark.String.PerformanceTest.csproj", "{899367DE-F146-4D31-9F5E-CE40A5EAF87C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdiotBenchmark.Dictionary.PerformanceTest", "IdiotBenchmark.Dictionary.PerformanceTest\IdiotBenchmark.Dictionary.PerformanceTest.csproj", "{B72B6809-DD1D-4359-AB14-88172EDBACE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77601604-3C85-429E-A704-BF5A1592B756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77601604-3C85-429E-A704-BF5A1592B756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77601604-3C85-429E-A704-BF5A1592B756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77601604-3C85-429E-A704-BF5A1592B756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B578518-87A8-4F61-AE6D-2A9781288873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B578518-87A8-4F61-AE6D-2A9781288873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B578518-87A8-4F61-AE6D-2A9781288873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B578518-87A8-4F61-AE6D-2A9781288873}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02711A69-AB8F-47C6-91C0-A5AB71124266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02711A69-AB8F-47C6-91C0-A5AB71124266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02711A69-AB8F-47C6-91C0-A5AB71124266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02711A69-AB8F-47C6-91C0-A5AB71124266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{899367DE-F146-4D31-9F5E-CE40A5EAF87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{899367DE-F146-4D31-9F5E-CE40A5EAF87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{899367DE-F146-4D31-9F5E-CE40A5EAF87C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{899367DE-F146-4D31-9F5E-CE40A5EAF87C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B72B6809-DD1D-4359-AB14-88172EDBACE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B72B6809-DD1D-4359-AB14-88172EDBACE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B72B6809-DD1D-4359-AB14-88172EDBACE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B72B6809-DD1D-4359-AB14-88172EDBACE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal
