@@ -17,7 +17,13 @@ jobs:
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: 6.0.x
-    - name: Restore dependencies
-      run: dotnet restore **/*.csproj
+    - name: Restore API.PerformanceTest
+      run: dotnet restore IdiotBenchmark.API.PerformanceTest/IdiotBenchmark.API.PerformanceTest.csproj
+    - name: Restore Dictionary.PerformanceTest
+      run: dotnet restore IdiotBenchmark.Dictionary.PerformanceTest/IdiotBenchmark.Dictionary.PerformanceTest.csproj
+    - name: Restore Mapper.PerformanceTest
+      run: dotnet restore IdiotBenchmark.Mapper.PerformanceTest/IdiotBenchmark.Mapper.PerformanceTest.csproj
+    - name: Restore String.PerformanceTest
+      run: dotnet restore IdiotBenchmark.String.PerformanceTest/IdiotBenchmark.String.PerformanceTest.csproj
     - name: Build
       run: dotnet build --no-restore
