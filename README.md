@@ -4,11 +4,12 @@
 
 Benchmark for personal use
 
+1. We use Allman style braces
+
 **Bad:**
 
 ```csharp
-public bool IsShopOpen(string pDay, int pAmount)
-{
+public bool IsShopOpen(string day, int amount) {
     // some logic
 }
 ```
@@ -19,5 +20,115 @@ public bool IsShopOpen(string pDay, int pAmount)
 public bool IsShopOpen(string day, int amount)
 {
     // some logic
+}
+```
+
+2. We use four spaces of indentation (no tabs)
+
+**Bad:**
+
+```csharp
+public bool IsShopOpen(string day, int amount) 
+{
+____// some logic
+}
+```
+
+**Good:**
+
+```csharp
+public bool IsShopOpen(string day, int amount)
+{
+....// some logic
+}
+```
+
+3. We use _camelCase for internal and private fields and use readonly where possible. Prefix internal and private instance fields with _
+
+**Bad:**
+
+```csharp
+public class Employee
+{
+    private IAssetService assetService;
+    private IMapper mapper;
+}
+```
+
+**Good:**
+
+```csharp
+public class Employee
+{
+    private readonly IAssetService _assetService;
+    private readonly IMapper _mapper;
+}
+```
+
+4. We avoid this. unless absolutely necessary
+
+**Bad:**
+
+```csharp
+public class Employee
+{
+    private string _alias;
+    private string _name;
+
+    public Employee(string name, string alias)
+    {
+        this._name = name;
+        this._alias = alias;
+    }
+}
+```
+
+**Good:**
+
+```csharp
+public class Employee
+{
+    private string _alias;
+    private string _name;
+
+    public Employee(string name, string alias)
+    {
+        _name = name;
+        _alias = alias;
+    }
+}
+```
+
+5. We always specify the visibility, even if it's the default (e.g. private string _foo not string _foo). Visibility should be the first modifier
+
+**Bad:**
+
+```csharp
+public class Employee
+{
+    string _alias;
+    string _name;
+
+    public Employee(string name, string alias)
+    {
+        _name = name;
+        _alias = alias;
+    }
+}
+```
+
+**Good:**
+
+```csharp
+public class Employee
+{
+    private string _alias;
+    private string _name;
+
+    public Employee(string name, string alias)
+    {
+        _name = name;
+        _alias = alias;
+    }
 }
 ```
