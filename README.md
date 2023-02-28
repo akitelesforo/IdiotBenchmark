@@ -274,3 +274,18 @@ public double CalculateSalary(int workingdays, int workinghours)
     // some logic
 }
 ```
+
+18.
+
+**Bad:**
+
+```csharp
+if (source == null) throw new ArgumentNullException("source");
+```
+
+**Good:**
+
+```csharp
+if (source == null)
+    throw new ArgumentNullException("source");
+```
