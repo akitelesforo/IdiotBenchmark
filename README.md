@@ -208,3 +208,26 @@ public class Employee
     }
 }
 ```
+
+
+9.
+
+**Bad:**
+
+```csharp
+var stream = OpenStandardInput()
+...
+
+FileStream stream;
+...
+...
+stream = new(...);
+```
+
+**Good:**
+
+```csharp
+var stream = new FileStream(...)
+...
+FileStream stream = new(...);
+```
