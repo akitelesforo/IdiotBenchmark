@@ -132,3 +132,43 @@ public class Employee
     }
 }
 ```
+
+5. We always specify the visibility, even if it's the default (e.g. private string _foo not string _foo). Visibility should be the first modifier
+
+**Bad:**
+
+```csharp
+using Newtonsoft.Json.Linq;
+using Polly;
+using Polly.Extensions.Http;
+using System.Net;
+using System.Text;
+using System.Web.Http;
+
+namespace UL.Coding
+
+public class Employee
+{
+    ...
+}
+```
+
+**Good:**
+
+```csharp
+using System.Net;
+using System.Text;
+using System.Web.Http;
+using Newtonsoft.Json.Linq;
+using Polly;
+using Polly.Extensions.Http;
+
+namespace UL.Coding
+
+public class Employee
+{
+    ...
+}
+```
+
+
