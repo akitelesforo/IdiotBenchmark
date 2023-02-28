@@ -133,7 +133,7 @@ public class Employee
 }
 ```
 
-5. We always specify the visibility, even if it's the default (e.g. private string _foo not string _foo). Visibility should be the first modifier
+6.
 
 **Bad:**
 
@@ -172,3 +172,39 @@ public class Employee
 ```
 
 
+7.
+
+**Bad:**
+
+```csharp
+public class Employee
+{
+    public Employee()
+    {
+        ...
+    }
+    
+    
+    public async Task<bool> Update()
+    {
+        ...
+    }
+}
+```
+
+**Good:**
+
+```csharp
+public class Employee
+{
+    public Employee()
+    {
+        ...
+    }    
+    
+    public async Task<bool> Update()
+    {
+        ...
+    }
+}
+```
