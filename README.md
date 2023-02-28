@@ -210,12 +210,12 @@ public class Employee
 ```
 
 
-9.
+10.
 
 **Bad:**
 
 ```csharp
-var stream = OpenStandardInput()
+var stream = OpenStandardInput();
 // ...
 
 FileStream stream;
@@ -227,7 +227,26 @@ stream = new(...);
 **Good:**
 
 ```csharp
-var stream = new FileStream(...)
+var stream = new FileStream(...);
 // ...
 FileStream stream = new(...);
+```
+
+
+11.
+
+**Bad:**
+
+```csharp
+Int32 a = 1;
+Int32.Parse(x);
+String.IsNullOrEmpty(s);
+```
+
+**Good:**
+
+```csharp
+int a = 1;
+int.Parse(x);
+string.IsNullOrEmpty(s);
 ```
