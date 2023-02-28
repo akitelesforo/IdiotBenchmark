@@ -250,3 +250,27 @@ int a = 1;
 int.Parse(x);
 string.IsNullOrEmpty(s);
 ```
+
+12.
+
+**Bad:**
+
+```csharp
+var employeephone;
+
+public double calculateSalary(int workingdays, int workinghours)
+{
+    // some logic
+}
+```
+
+**Good:**
+
+```csharp
+var employeephone;
+
+public double CalculateSalary(int workingdays, int workinghours)
+{
+    // some logic
+}
+```
